@@ -15,7 +15,7 @@
 	<description>Monitorar e desenvolver melhores formas para um redimento maior numa Safra</description>
 	<properties>
 		<java.version>17</java.version>
-		<ojdbc8.version>19.8.0.0</ojdbc8.version>
+		<ojdbc8.version>23.2.0.0</ojdbc8.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -42,7 +42,13 @@
       		<groupId>com.oracle.database.jdbc</groupId>
       		<artifactId>ojdbc8</artifactId>
       		<scope>runtime</scope>
-    	</dependency>				
+      		<version>${ojdbc8.version}</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-core</artifactId>
+    		<version>6.2.2.Final</version>
+		</dependency>				
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
